@@ -62,4 +62,28 @@ The Sort Visualizer is an interactive tool designed to help users understand and
 ## 7. Data Privacy
  Local Processing: All sorting operations and data are handled locally within the browser,
  ensuring user privacy.
+## Getting Started
+
+### Clone the repository:
+```bash
+git clone https://github.com/vamshiBoju/SortVisualizer.git
+```
+
+## Install dependencies:
+
+### Install frontend dependencies:
+```bash
+npm install
+```
+
+## Run the application:
+
+### Start the backend server:
+```bash
+npm start
+```
+
+## Open the application:
+### Go to http://localhost:3000 in your browser to start exploring connections!
+
 
