@@ -1,72 +1,68 @@
 # Sort Visualizer
 
-This is a [progressive web app](https://developers.google.com/web/progressive-web-apps) built using React and is used to visualize classic sorting algorithms such as insertion sort, merge sort, quick sort, heap sort, etc.
+The Sort Visualizer is an interactive tool designed to help users understand and visualize the process of different sorting algorithms. It offers a dynamic and educational way to explore how sorting algorithms work by visually demonstrating each step of the sorting process.
 
-This app is deployed with Netlify and can be accessed here: [sort-visualizer.ramizrahman.com](https://sort-visualizer.ramizrahman.com).
-I hope you have fun playing around with it.
+## 🌐 Live @ https://sortvisualizer.onrender.com/
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9b56ce4a-00e8-407c-b862-181d3dc7ee53/deploy-status)](https://app.netlify.com/sites/sort-visualizer/deploys)
 
-View a demo of the app on [youtube](https://www.youtube.com/watch?v=JFjvVmvC3pQ&feature=youtu.be):
+## Table of Contents
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Functionality](#functionality)
+- [Getting Started](#getting-started)
 
-[![Sort Visualizer Demo](http://img.youtube.com/vi/JFjvVmvC3pQ/0.jpg)](http://www.youtube.com/watch?v=JFjvVmvC3pQ 'Sort Visualizer Demo')
 
-## Purpose
+## Features
+- **Interactive Sorting**: Users can watch popular algorithms like Bubble Sort, Quick Sort, Merge Sort, and more, sorting an array in real-time.
+- **Step-by-Step Explanation**: Highlights individual comparisons and swaps to make it easier for users to follow the logic of each algorithm.
+- **Custom Inputs & Settings**: Users can input their own arrays or generate random ones, adjust the speed of visualization, and control the size of the array.
+- **Learning Aid**: By coupling code visualization with sorting steps, the tool helps beginners grasp the core concepts behind algorithmic sorting in an engaging manner.
 
-I wanted to improve my skills with React and also learn classic sorting algorithms. This project turned out to be a great way to achieve both of the aforementioned objectives at the same time.
+## Technologies Used
+- **Frontend**: React, JavaScript, HTML, CSS
 
-## Installation
+## Functionality
 
-The app is already deployed so you can play around with the final product using this [link](https://sort-visualizer.ramizrahman.com).
+### 1. Sorting Algorithms
+### Algorithm Variety: Users can visualize several sorting algorithms, including:
+- Bubble Sort
+- Selection Sort
+- Insertion Sort
+ - Quick Sort
+ - Merge Sort
+ - Heap Sort
+ Real-Time Visualization: Animates the sorting process in real time, showing comparisons,
+ swaps, and progress as the array gets sorted.
 
-If you wish to run this app locally, clone this repo and install the dependencies.
+## 2. Customization & Controls
+### Algorithm Selection: Choose from a dropdown list of algorithms to visualize.
+### Array Size Control: Adjust the size of the array to see how sorting is affected by different dataset sizes.
+### Speed Control: Modify the speed of the sorting animation for a slower or faster demonstration.
+### Array Generation: Generate random arrays of varying sizes for a randomized demonstration.
 
-```
-$ git clone https://github.com/ramiz-rahman/sort-visualizer.git
-$ cd sort-visualizer
-$ npm install
-```
+## 3. Sorting Process Interaction
+### Pause/Resume: Pause the sorting visualization at any step and resume it when desired.
+### Step-by-Step View: Observe each comparison and swap in the sorting process as it happens.
+### Custom Array Input: Input your own array values to see how the algorithms handle custom datasets.
 
-### Learn More
+## 4. Code and Explanation Display
+### Code Representation: Displays the code for the selected algorithm alongside the visualizer 
+### to help users understand the algorithm's logic.
+### Detailed Explanation: Provides textual explanations of each step in the sorting process to enhance comprehension.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 5. Color-Coded Visuals
+## Active Comparisons: Highlights elements being compared in a distinct color (e.g., yellow).
+## Swapping Elements: Shows swapped elements in a different color (e.g., red).
+## Sorted Elements: Highlights sorted elements in a final color (e.g., green) for clarity.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 6. User-Friendly Interface
+## Responsive Design: The application is optimized for use on both desktop and mobile devices.
+# Reset and Replay: Reset the visualizer and start a new sorting demonstration with different settings.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# 7. Data Privacy
+# Local Processing: All sorting operations and data are handled locally within the browser,
+# ensuring user privacy.
 
-## App Conventions
-
-The `src` folder contains three subdirectories:
-
-- `algorithms` - Each sorting algorithm is contained in its own file and imports helper functions from the `helpers.js` file, which is also present inside this folder. Each algorithm file has two named exports and a default export. The named exports are `<AlgorithmName>Key` which returns a mapping of the color group and its meaning in the context of the algorithm, and `<AlgorithmName>Desc` which returns an object containing the description and details of the algorithm. The default export, `AlgorithmName` is a function that takes in an array of numbers, sorts it and returns an object that contains every state change that the array has undergone. This object is used to create the animation.
-- `_settings` - This folder contains the the CSS files that only contain CSS custom properties declarations (also known as CSS variables) for the entirety of the app. These files are used to determine the overall look and feel of the application as all components rely upon these variables.
-- `components` - This folder is broken down into atoms, molecules and organisms subfolders as described in Brad Frost's [Atomic Design](http://atomicdesign.bradfrost.com/).
-
-  - The `Atoms` folder contains the smallest elements that are repeatedly used throughout the app - buttons, switches, backdrops, etc.
-  - The `Molecules` folder contains more complex components that are used independently or as part of an organisms.
-  - The `Organisms` folder contains components which are self contained sections of the app - the top bar, the visualizer, the app drawer, etc.
-  - A case can be made for a component to be in either a molecule or organism. In these sorts of situations, I did not use an exact set of rules but rather left it to intuition.
-  - Each component is contained in its own folder and has 2 files. The `index.js` file contains the JavaScript code for the component and the `style.css` file contains rules for classes which are written using an alternate style naming scheme of [BEM](https://en.bem.info/methodology/quick-start/) that is described as follows:
-
-    - Blocks are written in PascalCase and must match the name of the corresponding component.
-    - Elements are also written in PascalCase and separated from the block using double underscores (`__`). eg. `ComponentName__ElementName`.
-    - An element is always part of a block, not another element.
-    - Modifiers are written in lowercase.
-    - The modifier name is separated from the block or element name by a single underscore (`_`). eg. `ComponentName_modifiername_modifiervalue`
-
-## App Design
-
-The design of the app was largely inspired by Google's [Material Design Guidelines](https://material.io/design/).
-
-The app is responsive, meaning it works across a variety of screen sizes and dimensions.
-
-![Sort Visualizer - regular (light) mode](https://i.imgur.com/wYIircd.png)
-
-The app has a switch for turning on dark mode.
-
-![Sort Visualizer - dark mode](https://i.imgur.com/HwwiX7X.png)
-
-## License
-
-Sort Visualizer is released under the [MIT License](https://choosealicense.com/licenses/mit/)
+# 8. User Feedback & Help
+# Report Issue: Users can report any issues or bugs they encounter during the use of the application.
+# Sorting Guide: A simple guide is available that explains each sorting algorithm and details its time complexity.
