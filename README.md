@@ -35,34 +35,31 @@ The Sort Visualizer is an interactive tool designed to help users understand and
  swaps, and progress as the array gets sorted.
 
 ## 2. Customization & Controls
-### Algorithm Selection: Choose from a dropdown list of algorithms to visualize.
-### Array Size Control: Adjust the size of the array to see how sorting is affected by different dataset sizes.
-### Speed Control: Modify the speed of the sorting animation for a slower or faster demonstration.
-### Array Generation: Generate random arrays of varying sizes for a randomized demonstration.
+ Algorithm Selection: Choose from a dropdown list of algorithms to visualize.
+ Array Size Control: Adjust the size of the array to see how sorting is affected by different dataset sizes.
+ Speed Control: Modify the speed of the sorting animation for a slower or faster demonstration.
+ Array Generation: Generate random arrays of varying sizes for a randomized demonstration.
 
 ## 3. Sorting Process Interaction
-### Pause/Resume: Pause the sorting visualization at any step and resume it when desired.
-### Step-by-Step View: Observe each comparison and swap in the sorting process as it happens.
-### Custom Array Input: Input your own array values to see how the algorithms handle custom datasets.
+ Pause/Resume: Pause the sorting visualization at any step and resume it when desired.
+ Step-by-Step View: Observe each comparison and swap in the sorting process as it happens.
+ Custom Array Input: Input your own array values to see how the algorithms handle custom datasets.
 
 ## 4. Code and Explanation Display
-### Code Representation: Displays the code for the selected algorithm alongside the visualizer 
-### to help users understand the algorithm's logic.
-### Detailed Explanation: Provides textual explanations of each step in the sorting process to enhance comprehension.
+ Code Representation: Displays the code for the selected algorithm alongside the visualizer 
+ to help users understand the algorithm's logic.
+ Detailed Explanation: Provides textual explanations of each step in the sorting process to enhance comprehension.
 
-### 5. Color-Coded Visuals
-## Active Comparisons: Highlights elements being compared in a distinct color (e.g., yellow).
-## Swapping Elements: Shows swapped elements in a different color (e.g., red).
-## Sorted Elements: Highlights sorted elements in a final color (e.g., green) for clarity.
+## 5. Color-Coded Visuals
+ Active Comparisons: Highlights elements being compared in a distinct color (e.g., yellow).
+ Swapping Elements: Shows swapped elements in a different color (e.g., red).
+ Sorted Elements: Highlights sorted elements in a final color (e.g., green) for clarity.
 
-### 6. User-Friendly Interface
-## Responsive Design: The application is optimized for use on both desktop and mobile devices.
-# Reset and Replay: Reset the visualizer and start a new sorting demonstration with different settings.
+## 6. User-Friendly Interface
+ Responsive Design: The application is optimized for use on both desktop and mobile devices.
+ Reset and Replay: Reset the visualizer and start a new sorting demonstration with different settings.
 
-# 7. Data Privacy
-# Local Processing: All sorting operations and data are handled locally within the browser,
-# ensuring user privacy.
+## 7. Data Privacy
+ Local Processing: All sorting operations and data are handled locally within the browser,
+ ensuring user privacy.
 
-# 8. User Feedback & Help
-# Report Issue: Users can report any issues or bugs they encounter during the use of the application.
-# Sorting Guide: A simple guide is available that explains each sorting algorithm and details its time complexity.
